@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> Elemento Div </title>
+    </head>
+        <body>
+            <main>
+                <div>
+
+                <form action="/enviar-respuestas"> <!--en este apartado se pone la base de datos cuando haya una -->
+                    <input type="text">  <!--en esta linea se crea el cuadro de texto -->
+                    <button type="submit"> ENVIAR </button> <!--en esta linea se crea el boton para enviar -->
+                </form>
+
+                <h1>formulario con placeholder</h1>
+
+                <form action="/enviar-respuestas"> <!--en este apartado se pone la base de datos cuando haya una -->
+                    <input type="text" placeholder="ingrese su nombre completo (ejemplo)">  <!--en esta linea se crea el cuadro de texto  y descripcion -->
+                    <button type="submit"> ENVIAR </button> <!--en esta linea se crea el boton para enviar -->
+                </form>
+
+                <h1>formulario con placeholder y campo obligatorio </h1>
+
+                <form action="/enviar-respuestas"> <!--en este apartado se pone la base de datos cuando haya una -->
+                    <input type="text" placeholder="ingrese su nombre completo (ejemplo)" required >  <!--en esta linea se crea el cuadro de texto  y descripcion  y se usa un campo obligatorio -->
+                    <button type="submit"> ENVIAR </button> <!--en esta linea se crea el boton para enviar -->
+                </form>
+
+                <h1> SELECIION POR boton</h1>
+                <input type="radio"> boton 1 <!--este boton se selecciona cuando tocas el boton-->
+                <input type="radio"> boton 2 
+
+                <h1> SELECIION POR texto (click)</h1>
+                <label><input type="radio"> boton 1 </label><!--este boton se selecciona cuando tocas el texto para eso usamos <label>-->
+                <label><input type="radio"> boton 2 </label>
+
+                <h1> seleccionar una sola casilla </h1>
+                <label for="ejemplo 1"> <input id="ejemplo 1" type="radio"name ="ejemplo 1 -ejemplo 2"> boton 1 </label><!--en este ejemplo se crea la base para que se seleccione una sola casilla-->
+                <label for="ejemplo 2"> <input id="ejemplo 2" type="radio" name ="ejemplo 1 -ejemplo 2">  boton 2 </label>
+
+
+                <h1> elementos con salto de linea </h1>
+                <label for="ejemplo 1"> <input id="ejemplo 1" type="radio"name ="ejemplo 1 -ejemplo 2"> boton 1 </label>
+                <br><!--esta etiqueta se utiliza para un salto de linea -->
+                <label for="ejemplo 2"> <input id="ejemplo 2" type="radio" name ="ejemplo 1 -ejemplo 2">  boton 2 </label>
+
+                <h1> CON ATRIBUTO VALUE </h1>
+                <label for="ejemplo 1"> <input id="ejemplo 1" type="radio" value="ejemplo 1" name="ejemplo 1 -ejemplo 2"> boton 1 </label><!--cuando EXISTA UNA BASE DE DATOS EL ATRIBUTO VALUE ayudara a diferenciar cada uno de los elementos en la base de datos-->
+                <label for="ejemplo 2"> <input id="ejemplo 2" type="radio" value="ejemplo 2 " name ="ejemplo 1 -ejemplo 2">  boton 2 </label>
+                <h1>atributo value ayuda a saver ala base de datos cual fue el que se selecciono </h1>
+            </div> <!--atributo div sirve para agrupar elementos se vera cuando este en CSS -->
+                    <h1>atributo div sirve para agrupar elementos se vera cuando este en CSS</h1>
+            
+            </main>
+        </body>
+   
+</html>
